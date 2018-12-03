@@ -8,11 +8,14 @@ public class Play : MonoBehaviour {
     [SerializeField] GameObject discForPlayerB;
     int noOfDiscsAdded = 0;
     [SerializeField] GameObject wayPoint;
+    [SerializeField] int columnNumber;
 
     GameStatus gameStatus;
+    ArrayStore gameArrayStore;
     // Use this for initialization
     void Start () {
         gameStatus = FindObjectOfType<GameStatus>();
+        gameArrayStore = FindObjectOfType<ArrayStore>();
 
     }
 
@@ -40,21 +43,18 @@ public class Play : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Vector2 discPosition = new Vector2(transform.position.x / Screen.width * 16f, transform.position.y / Screen.width * 16f);
-                //Debug.Log("Transform x = " + transform.position.x + " Transform y = " + transform.position.y );
 
-                //Debug.Log("Transform x = "+transform.position.x / Screen.width * 16f + " Transform y = " + transform.position.y / Screen.width * 16f);
-                //Debug.Log(transform.position.x / Screen.width * 16f + " " + transform.position.y / Screen.width * 16f);
-                //Debug.Log("Mouse X = "+Input.mousePosition.x +" Mouse Y="+ Input.mousePosition.y );
-                //Debug.Log("Mouse X = " + Input.mousePosition.x / Screen.width * 16f + " Mouse Y=" + Input.mousePosition.y / Screen.width * 16f);
                 if (gameStatus.getCurrentPlayer() == "PlayerA")
                 {
                     GameObject newDisc = Instantiate(discForPlayerA, wayPoint.transform.position, transform.rotation) as GameObject;
+                    gameArrayStore.setGameArrayStore(noOfDiscsAdded, columnNumber, 1);
                 }
                 else if (gameStatus.getCurrentPlayer() == "PlayerB")
                 {
                     GameObject newDisc = Instantiate(discForPlayerB, wayPoint.transform.position, transform.rotation) as GameObject;
+                    gameArrayStore.setGameArrayStore(noOfDiscsAdded, columnNumber, 2);
                 }
+
                 noOfDiscsAdded++;
                 gameStatus.setPlayable(true);
                 gameStatus.setNextPlayer();

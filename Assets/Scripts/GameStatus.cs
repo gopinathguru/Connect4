@@ -7,8 +7,22 @@ public class GameStatus : MonoBehaviour {
     [SerializeField] string currentPlayer;
     [SerializeField] bool currentPlayable = true;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        if (FindObjectsOfType<GameStatus>().Length > 1)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+
+
+    }
+    // Use this for initialization
+    void Start () {
         currentPlayer = "PlayerA";
         setPlayable(true);
 	}

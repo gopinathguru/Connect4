@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AddDisc.cs" />
+    <Compile Include="Assets\Scripts\ArrayStore.cs" />
     <Compile Include="Assets\Scripts\GameStatus.cs" />
     <Compile Include="Assets\Scripts\Play.cs" />
     <Reference Include="UnityEditor.StandardEvents">

@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{E08BD73F-A739-EA67-7388-48EFC893766D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameStatus.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ArrayStore.cs">
     <Files>
-      <File FileName="Assets/Scripts/AddDisc.cs" Line="9" Column="23" />
+      <File FileName="Assets/Scripts/AddDisc.cs" Line="40" Column="17" />
       <File FileName="../StarWars/Assets/Scripts/Player.cs" Line="39" Column="10" />
-      <File FileName="../Block-Breaker/Assets/Scripts/GameStatus.cs" Line="16" Column="25" />
+      <File FileName="../Block-Breaker/Assets/Scripts/GameStatus.cs" Line="16" Column="1" />
       <File FileName="../Block-Breaker/Assets/Scripts/Block.cs" Line="28" Column="31" />
       <File FileName="../Block-Breaker/Assets/Scripts/Ball.cs" Line="39" Column="25" />
       <File FileName="../Block-Breaker/Assets/Scripts/level.cs" Line="1" Column="1" />
       <File FileName="../Block-Breaker/Assets/Scripts/LoseCollider.cs" Line="1" Column="1" />
       <File FileName="../Block-Breaker/Assets/Scripts/LoadScene.cs" Line="1" Column="1" />
-      <File FileName="../Block-Breaker/Assets/Scripts/Paddle.cs" Line="21" Column="89" />
+      <File FileName="../Block-Breaker/Assets/Scripts/Paddle.cs" Line="15" Column="19" />
       <File FileName="../StarWars/Assets/Scripts/Shredder.cs" Line="5" Column="22" />
-      <File FileName="Assets/Scripts/Play.cs" Line="37" Column="114" />
-      <File FileName="Assets/Scripts/GameStatus.cs" Line="7" Column="22" />
+      <File FileName="Assets/Scripts/Play.cs" Line="59" Column="19" />
+      <File FileName="Assets/Scripts/GameStatus.cs" Line="9" Column="5" />
+      <File FileName="Assets/Scripts/ArrayStore.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
