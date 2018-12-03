@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a64ed16e65946c6b7649fe8ff88c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  discForPlayerA: {fileID: 1692363050821148, guid: 0d4b93f5cdd4d4cfe91dc0ac1e2990ee,
+  discForPlayerA: {fileID: 1468190980176002, guid: 728348f782a864394b2d92b2c31a0f12,
     type: 2}
   discForPlayerB: {fileID: 1468190980176002, guid: 39defbf6a3ab946fdb3dbbb01b8d4719,
     type: 2}
